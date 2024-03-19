@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: #066acd;
+}
+.container{
+    width: 40%;
+    min-width: 450px;
+    position: absolute;
+    min-height: 100px;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    background: #0C2D57;
+    border-radius: 10px;
+}
+
+#topBar{
+    position: relative;
+    padding: 30px 20px;
+}
+#topBar input{
+    width: 75%;
+    height: 45px;
+    font-family:'Poppins',sans-serif;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+}
+ 
+#topBar input:focus{
+    outline: none;
+    border-color: #0d75ec;
+}
+
+#topBar button{
+    position: relative;
+    float: right;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: ‘Poppins’,sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #FC6736;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+}
+
+#tasks{
+    background-color: #FFB0B0;
+    padding: 30px 20px;
+    margin-top: 10px;
+    width: 100%;
+    position: relative;
+}
+ 
+ul li{
+    background-color: #c5e1e6;
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    border: 1px solid #939697;
+    cursor: pointer;
+    font-family: ‘Poppins’,sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
