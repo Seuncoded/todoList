@@ -78,5 +78,38 @@ ul li{
     font-family: ‘Poppins’,sans-serif;
     font-size: 15px;
     font-weight: 400;
+    display: flex;
+    justify-content: space-between;
 }
 
+#btn1{
+    float: right;
+    background-color: #004FFF;
+    height: 40px;
+    width: 80px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    color: white;
+    font-weight: 900;
+
+
+}
+
+#btn2{
+    float: right;
+    background-color: #902D41;
+    height: 40px;
+    width: 80px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    color: white;
+    font-weight: 900;
+
+}
+
+span{
+    display: flex;
+    gap: 5px;
+}

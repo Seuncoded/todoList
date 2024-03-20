@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<div id="container">
+    <div id="small-container">
+        <input id="input" type="text" placeholder="Enter to keep track of your daily activties" />
+        <button id="btnns" onclick="addtodo()">Add</button>
+        <div id="tododiv">
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+
+
+    let spli = ['He', 'Him', 'They', "okay"]
+    console.log(spli);
+    spli.splice(2, 1)
+    console.log(spli);
+
+
+
+    function dispList(){
+         tododiv.innerHTML = ""
+        for (let i = 0; i < todoarr.length; i++) {
+            tododiv.innerHTML += `<h1>${i + 1} ${todoarr[i]} 
+                <button onclick=delItem(${i})>Delete</button>
+                <button onclick=editItem(${i})>Edit</button></h1>`
+        }
+    }
+
+    let input = document.getElementById('input')
+    let tododiv = document.getElementById('tododiv')
+    let todoarr = []
+
+
+
+     function addtodo() {
+        todoarr.unshift(input.value);
+        dispList()
+    }
+
+    function delItem(p) {
+        todoarr.splice(p, 1);
+        dispList()
+
+    }
+
+    function editItem(i) {
+
+        let changing = prompt('Enter the New Value')
+        todoarr.splice(i, 1, changing);
+        console.log(todoarr);
+        dispList()
+    }
+
+
+
+
+</script>
